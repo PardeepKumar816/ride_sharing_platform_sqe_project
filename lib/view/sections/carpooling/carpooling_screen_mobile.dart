@@ -43,7 +43,7 @@ class CarpoolingScreenMobile extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: ElevatedButton(onPressed: (){
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> PaymentScreenMobile()));
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> PaymentScreenMobile(payment: double.parse(fare),)));
             }, child: const Text("Skip")),
           ),
         ],
